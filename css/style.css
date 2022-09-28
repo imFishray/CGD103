@@ -288,12 +288,15 @@ img{
 .Classifty_List li{
     margin:10px auto;
 }
-
-.Classifty_List button{
+#button_switch{
+    display: none;
+}
+#button_switch:checked+.Goods .Classifty_List ul li ul{
+    display: block;
+}
+.Classifty_List .EorW{
     width: 100%;
-    display: flex;
     justify-content: space-between;
-    padding: 1rem 10px;
     background-color: transparent;
     border: 0;
     color: white;
@@ -301,13 +304,6 @@ img{
 }
 .Classifty_List .EorW +ul{
     display: none;
-    padding: 0 0 0 10px;
-}
-.Classifty_List .EorW:focus+ul{
-    display: block;
-}
-.Classifty_List .EorW:focus::after span+span{
-    contain: '';
 }
 .Right{
     width: 87.5%;
