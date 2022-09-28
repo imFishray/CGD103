@@ -7,10 +7,10 @@
     z-index: 10;
 }
 #TopHeader_Ad{
-    height: 30px;
-    line-height: 30px;
     background-color: #cac8c8;
-    text-align: center;;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
 }
 #TopHeader_Ad span{
     width: 100%;
