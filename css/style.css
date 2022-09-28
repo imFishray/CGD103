@@ -1,0 +1,365 @@
+@media (max-width: 1919px) and (min-width: 768px) {
+    html {
+        width: 100%;
+    }
+    @-ms-viewport { width: 1920px; }
+}
+/* ----------------------共有區域-------------------------- */
+*{
+    cursor: url('/pic/Logo.svg')10 5,move;
+}
+a,h3,span,div{
+    font-family:"Microsoft YaHei";
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+}
+img{
+    width: 100%;
+}
+.Article{
+    margin-bottom: 80px;
+    width: 100%;
+} 
+/* ----------------------MainHeader-------------------------- */
+.MainHeader{
+    width: auto;
+    align-items: center;
+}
+.MainHeader_BG .video{
+    width: 100%;
+    height: auto;   
+}
+.MainHeader_BG .video video{
+    width: 100%;
+    height: auto;   
+}
+.MainHeader_BG_ProjectBox{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 30px auto 80px;
+}
+.MainHeader_BG_ProjectBox .Button{
+    margin: 15px auto;
+    padding: 10px;
+}
+.MainHeader_BG_ProjectBox .Button a{
+    color: #4E4E4E;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #797979;
+    border-radius: 10px;
+}
+.MainHeader_BG_ProjectBox .Headline{
+    font-size: 48px;
+    font-weight: 900;
+}
+.MainHeader_BG_ProjectBox .Subtitle{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color:#797979;
+}
+/* ------------小廣告區域------------ */
+.Banner_Container{
+    display: flex;
+}
+.Banner_Container .Banner_card{
+    width: 0;
+    flex-grow: 1;
+}
+.Banner_Container .Show-Btn .Mask{
+    position: absolute;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(360deg,rgb(0, 0, 0), rgb(2, 2, 2,0));
+}
+.Banner_Container .Show-Btn{
+    position: relative;
+}
+.Banner_List .Banner_Effect_Button{
+    background-color: #4150D6;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 900;
+    border:5px solid white;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: auto;
+    color: #e5e5e5;
+    bottom: 40px;
+    left: 40px;
+}
+.Banner_List .Banner_Effect_Button span{
+    letter-spacing: 5px;
+}
+.Banner_List .Banner_Effect_Button:hover{
+    color: #cfcfcf;
+    background-image: linear-gradient(360deg,rgba(63, 63, 63, 0.342),rgba(63, 63, 63, 0.342));
+}
+/* ------------人氣商品------------ */
+.Gallery_title{
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0 40px;
+    font-weight: bolder;
+}
+.Scroll_Gallery{
+    width: 100%;
+}
+.ScrollBar_Wrap ul{
+    display: flex;
+}
+.ScrollBar_Wrap ul li{
+    font-size: 20px;
+    margin: 0 auto;
+}
+.ScrollBar_Wrap ul li .Product_Name{
+    color: #464646;
+}
+.ScrollBar_Wrap ul li .Product_Price{
+    color: #262626;
+}
+.ScrollBar_Wrap ul li:hover .Gallery_Button{
+    opacity: 1;
+    transition: .5s;
+}
+.ScrollBar_Wrap p{
+    font-size: 20px;
+    padding: 10px 30px;
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+    letter-spacing: 0;
+}
+.ScrollBar_Wrap .Gallery_Button{
+    opacity: 0;
+    margin: 20px auto;
+}
+.ScrollBar_Wrap .Gallery_Button a{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 2px solid #4F4F4F;
+    color: #4E4E4E;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6 );
+}
+/* ------------長型廣告區域------------ */
+.Large_Banner{
+    text-align: center;
+}
+.Large_Banner h3{
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.Large_Banner .HeaeLine{
+    font-size: 48px;
+}
+.Large_Banner .Secondary{
+    font-size: 24px;
+    color: #797979;
+    letter-spacing: 0;
+}
+.Large_Banner img{
+    width: 100%;
+}
+/* ------------熱門球星區域------------ */
+.Card_Wrapper{
+    padding: 0 50px;
+}
+.Player_Card{
+    width: 100%;
+}
+.Hot_Player_Title{
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 30px;
+    font-weight: bolder;
+}
+.Hot_Player ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.Hot_Player ul li{
+    margin: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+.Player_Name{
+    font-size: 24px;
+    font-weight: 900;
+    color: #4E4E4E;
+}
+.Team_Name{
+    font-size: 16px;
+    font-weight: 900;
+    color: #4E4E4E;
+}
+
+/* 登入註冊頁面 */
+/* ------------登入註冊頁面------------ */
+.Login_Page a{
+    line-height: 19px;
+    color:black;
+}
+.Login-Wrapper{
+    max-width: 1000px;
+    display: flex;
+    gap: 40px;
+    margin: 5% auto 5%;
+}
+.Login_Item{
+    width: 50%;
+}
+.Login_Item h3{
+    font-size: 28px;
+    text-align: left;
+}
+.Login_Text{
+    width: 100%;
+    text-align: left;
+}
+.Login_Text input{
+    margin-top: 20px;
+    padding: 10px 5px;
+    width: 300px
+}
+.Remember_Forgot{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.Login_Button{
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    margin: 30px auto;
+}
+.Login_Button a{
+    border: 2px solid black;
+    padding: 10px 40px;
+}
+.Login_Button a:hover{
+    background-color: black;
+    color: white;
+}
+.CheckBox{
+    margin: 10px auto;
+}
+.Radio li{
+    display: flex;
+    font-size: 12px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.Radio li label{
+    line-height: 19px;
+}
+/* 商品列表頁面 */
+/* ------------商品列表頁面------------ */
+.Goods{
+    display: flex;
+}
+.Left{
+    width: 12.5%;
+    background-color: #39363F;
+}
+.Classifty{
+    padding: 30px 16px;
+}
+.Classifty .Classifty_Title{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#cfcfcf;
+}
+.Classifty .Classifty_Line{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.Classifty_List li{
+    margin:10px auto;
+}
+
+.Classifty_List button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 10px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 16px;
+}
+.Classifty_List .EorW +ul{
+    display: none;
+    padding: 0 0 0 10px;
+}
+.Classifty_List .EorW:focus+ul{
+    display: block;
+}
+.Classifty_List .EorW:focus::after span+span{
+    contain: '';
+}
+.Right{
+    width: 87.5%;
+    margin-bottom: 40px;
+}
+.Goods_List{
+    padding: 20px 40px;
+}
+.Goods_Grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+}
+.Goods_Grid .Goods_Item{
+    width: 100%;
+}
+.Goods_Grid .Goods_Item img{
+    height: 70%;
+}
+.Goods_Grid .Goods_Item .Goods_Txt{
+    width: 100%;
+    height: 30%;
+    padding: 0 20px;
+}
+.Goods_Txt .Goods_Name{
+    font-size: 14px;
+    color:#464646;
+    font-weight:normal;
+    line-height: 18px;
+}
+.Goods_Txt .Goods_Price{
+    color: black;
+    font-weight: bolder;
+    
+}
+.Goods_Txt p{
+    text-align: left;
+    margin: 10px 0;
+}
+.Goods_Icon_Name h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #262626;
+    text-align: left;
+    margin: 20px auto;
+}
+.Page_Number{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.Page_Number .Category{
+    padding: 10px 10px;
+}
