@@ -173,6 +173,17 @@ img{
 }
 .Player_Card{
     width: 100%;
+    position: relative;
+}
+.Player_Card .Front{
+    transform-style:preserve-3d;
+    transition: .5s all ease-out;
+}
+.Player_Card:hover .Front{
+    transform:rotateY(180deg);
+    position:absolute;
+}.Player_Card .Front{
+    backface-visibility:hidden;
 }
 .Hot_Player_Title{
     font-size: 36px;
