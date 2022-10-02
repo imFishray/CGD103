@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NBA Star Store</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="icon" type="images/png" href="images/simple_logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/HeaderandFooter.css">
+    <link rel="stylesheet" href="main.js">
 </head>
 <body>
     <article class="TopHeader">
@@ -17,7 +19,7 @@
                     <a href="index.html"><img src="images/Logo.svg"></a>
                 </div>
                 <ul class="Nav-Item">
-                    <li><a href="#">球 衣</a></li>
+                    <li><a href="GoodsList.html">球 衣</a></li>
                     <li><a href="#">配 件</a></li>
                     <li><a href="#">鞋 類</a></li>
                     <li><a href="#">選擇球隊</a></li>
@@ -34,7 +36,7 @@
                     <span>/</span>
                     <a href="login.html" class="Account_SignUp">註冊</a>
                 </div>
-                <a href="" class="Shop_Icon"><img src="images/Icon/Icon_shoppingcart.png" alt="Shop_Icon"></a>
+                <a href="shopping cart.html" class="Shop_Icon"><img src="images/Icon/Icon_shoppingcart.png" alt="Shop_Icon"></a>
             </nav>       
         </section>
         <div id="TopHeader_Ad">
@@ -42,63 +44,65 @@
             <span>下單後1~3個工作天出貨 | 7天鑑賞期無條件退貨</span>
         </div>
     </article>
-    <section class="Goods_Input" style="display: flex;padding: 60px;max-width: 1400px;margin: auto;">
-        <div class="LEFT" style="width: 60%;">
-            <div class="pd_img">
-                <img src="/images/goods_items/CW3591107_425b44663c98c228d0bac04be62a58b4.jpg" alt="">
-                <img src="/images/goods_items/CW3591107_425b44663c98c228d0bac04be62a58b4.jpg" alt="">
-                <img src="/images/goods_items/CW3591107_425b44663c98c228d0bac04be62a58b4.jpg" alt="">
+    <section class="Goods_Input">
+        <div class="Goods_Left">
+            <div class="Goods_littlepic">
+                <img src="images/goods_items/CW3591107_425b44663c98c228d0bac04be62a58b4.jpg" alt="">
+                <img src="images/goods_items/CW3591107_9bcbebec75f74720470f4e4b0077ba26.jpg" alt="">
+            </div>
+            <div class="Pd_Img">
+                <img src="images/goods_items/CW3591107_425b44663c98c228d0bac04be62a58b4.jpg" alt="">
             </div>
         </div>
-        <div class="Right" style="width: 40%;padding: 60px 20px;">
-            <div class="pd_title" style="line-height: 30px;">
-                <div class="title" style="font-size:28px;">
-                    <h3 style="text-align: left">金州勇士燙印 2022/23 30號球衣</h3>
+        <div class="Goods_Right">
+            <div class="Pd_Title">
+                <div class="Title">
+                    <span>金州勇士燙印 2022/23 30號球衣</span>
                 </div>
-                <div class="word" style="text-align: left">
-                    <span style="font-size: 16px;">男款 NIKE SWGMN球衣</span>
+                <div class="Word">
+                    <p>男款 NIKE SWGMN球衣</p>
                 </div>
-                <div class="pd_price" style="text-align: left">
-                    <span style="font-size: 24px;">NT$2680</span>
-                </div>
-            </div>
-            <div class="SIZE">
-                <div class="size_txt" style="display: flex;justify-content:space-between;">
-                    <span>選取尺寸</span>
-                    <span>尺寸指南</span>
-                </div>
-                <div class="size_sec" style="display: grid;grid-template-columns: repeat(4,1fr);gap: 10px;margin: 20px auto;">
-                    <div style="border: 1px solid black;padding:10px">
-                        <a href="" style="color: black;">US S</a>
-                    </div>
-                    <div style="border: 1px solid black;padding:10px">
-                        <a href="" style="color: black;">US M</a>
-                    </div>
-                    <div style="border: 1px solid black;padding:10px">
-                        <a href="" style="color: black;">US L</a>
-                    </div>
-                    <div style="border: 1px solid black;padding:10px">
-                        <a href="" style="color: black;">US XL</a>
-                    </div>
-                    <div style="border: 1px solid black;padding:10px">
-                        <a href="" style="color: black;">US 2XL</a>
-                    </div>
+                <div class="Pd_Price">
+                    <span>NT$2680</span>
                 </div>
             </div>
-            <div class="button" style="background-color: rgb(0, 0, 0);display: flex;margin: 20px auto;">
-                <a href="" style="width: 100%;margin: 20px;color: white;">加入購物車</a>
+            <div class="Size">
+                <div class="size_txt">
+                    <a href="">選取尺寸</a>
+                    <a href="">尺寸指南</a>
+                </div>
+                <div class="Size_Sec">
+                    <div>
+                        <button href="">S(40)</button>
+                    </div>
+                    <div>
+                        <button href="">M(44)</button>
+                    </div>
+                    <div>
+                        <button href="">L(48)</button>
+                    </div>
+                    <div>
+                        <button href="">XL(52)</button>
+                    </div>
+                    <div>
+                        <button href="">2XL(56)</button>
+                    </div>
+                </div>
             </div>
-             <div pd_ttxt style="border: 2px solid black;padding:10px; text-align: left;line-height: 30px;box-shadow: 10px 10px 20px 5px rgba(110, 110, 110, 0.541);border-radius:10px;"><!--補充說明 -->
-                <div>
-                    <p style="text-align: left;">
-                        這款球衣如同其他 Nike Stadium 系列球衣，巧妙結合復刻設計細節與排汗材質，打造摯愛球隊的出戰風格。 這款產品採用 100% 再生聚酯纖維。
+            <div class="Button">
+                <div><a href="">加入購物車</a></div>
+            </div>
+             <div class="Pd_Description"><!--補充說明 -->
+                <div class="Pd_Ttxt">
+                    <p>
+                        每支球隊都有專屬本色和獨一無二的特色，讓這款球衣在聯盟中顯得與眾不同。 這款 Golden State Warriors 球衣比照職業籃球員的場上穿著，結合輕量排汗網布與球隊細節，向彌足珍貴的籃球經典致敬。 本款球衣提供不分場內外的全程涼快乾爽感受，也讓你盡情頌揚支持的球員和喜愛的比賽。 這款球衣如同其他 Nike Stadium 系列球衣，巧妙結合復刻設計細節與排汗材質，打造摯愛球隊的出戰風格。 這款產品採用 100% 再生聚酯纖維。
                     </p>
                 </div>
-                <div class="sizemodel" style="text-align: left;">
-                    <input type="checkbox" name="" id="123" style="display: none;">
-                    <label for="123" style="font-size: 20px;display: flex;">
+                <div class="SizeModel">
+                    <input type="checkbox" name="" id="" style="display: none;">
+                    <label for="">
                         <span>尺寸與板型</span>
-                        <p style="transform: rotate(90deg);">＞</p>
+                        <p>＞</p>
                     </label>
                     <ul>
                         <!-- <li>模特兒身高 188 公分，穿著 M 號</li>
@@ -106,9 +110,12 @@
                         <li><a href="">標準剪裁，著感寬鬆隨興</a></li> -->
                     </ul>
                 </div>
-                <div class="sent"  style="text-align: left;">
-                    <input type="checkbox" name="" id="1234" style="display: none;">
-                    <label for="1234">免費寄送及退貨</label>
+                <div class="Sent">
+                    <input type="checkbox" name="" id="" style="display: none;">
+                    <label for="">
+                        <span>免費寄送及退貨</span>
+                        <p>＞</p>
+                    </label>
                     <ul>
                         <!-- <span>訂單金額滿新臺幣 4,500 元即享免費標準運送服務</span>
                         <br>
@@ -137,52 +144,42 @@
     </section>
     <article class="Footer">
         <div class="Service">
+            <div class="Footer_Logo">
+                <img src="images/Logo.svg" alt="">
+            </div>
             <div class="Service_Wrapper">
-                <div class="Service_Item">
+                <div class="Service_Item">  
                     <div class="Service_List">
                         <h3>客戶服務</h3>
                         <ul>
-                            <li>幫 助</li>
+                            <li>尺寸剪裁說明</li>
+                            <li>訂單說明與配送政策</li>
+                            <li>電子發票與付款說明</li>
                             <li>聯絡我們</li>
                             <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
                         </ul>
                     </div>
                     <div class="Service_List">
-                        <h3>客戶服務</h3>
+                        <h3>訂單及售後</h3>
                         <ul>
-                            <li>幫 助</li>
-                            <li>聯絡我們</li>
-                            <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
+                            <li>電子發票與付款說明</li>
+                            <li>訂單說明與配送政策</li>
+                            <li>退貨說明與配送政策</li>                        </ul>
+                    </div>
+                    <div class="Service_List">
+                        <h3>關於品牌</h3>
+                        <ul>
+                            <li>品牌故事</li>
+                            <li>運動明星</li>
+                            <li>人才招募</li>
+                            <li>挑選指南</li>
                         </ul>
                     </div>
                     <div class="Service_List">
-                        <h3>客戶服務</h3>
-                        <ul>
-                            <li>幫 助</li>
-                            <li>聯絡我們</li>
-                            <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
-                        </ul>
+                        <h3>會員中心</h3>
                     </div>
                     <div class="Service_List">
-                        <h3>客戶服務</h3>
-                        <ul>
-                            <li>幫 助</li>
-                            <li>聯絡我們</li>
-                            <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
-                        </ul>
-                    </div>
-                    <div class="Service_List">
-                        <h3>客戶服務</h3>
-                        <ul>
-                            <li>幫 助</li>
-                            <li>聯絡我們</li>
-                            <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
-                        </ul>
+                        <h3>反詐騙聲明</h3>
                     </div>
                 </div>
                 <div class="Community">

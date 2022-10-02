@@ -1,13 +1,4 @@
-@media (max-width: 1919px) and (min-width: 768px) {
-    html {
-        width: 100%;
-    }
-    @-ms-viewport { width: 1920px; }
-}
 /* ----------------------共有區域-------------------------- */
-*{
-    cursor: url('/pic/Logo.svg')10 5,move;
-}
 a,h3,span,div{
     font-family:"Microsoft YaHei";
     text-decoration: none;
@@ -27,12 +18,14 @@ img{
     align-items: center;
 }
 .MainHeader_BG .video{
-    width: 100%;
+    display: flex;
+    max-height: 820px;
     height: auto;   
 }
 .MainHeader_BG .video video{
     width: 100%;
-    height: auto;   
+    object-fit: cover;
+    overflow: hidden;
 }
 .MainHeader_BG_ProjectBox{
     width: 100%;
@@ -45,16 +38,17 @@ img{
     padding: 10px;
 }
 .MainHeader_BG_ProjectBox .Button a{
-    color: #4E4E4E;
+    color: #797979;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid #797979;
     border-radius: 10px;
 }
 .MainHeader_BG_ProjectBox .Headline{
     font-size: 48px;
     font-weight: 900;
+    text-align: center;
 }
 .MainHeader_BG_ProjectBox .Subtitle{
     font-size: 24px;
@@ -82,7 +76,7 @@ img{
     position: relative;
 }
 .Banner_List .Banner_Effect_Button{
-    background-color: #4150D6;
+    background-color: rgb(65, 80, 214);
     position: absolute;
     font-size: 16px;
     font-weight: 900;
@@ -90,7 +84,7 @@ img{
     border-radius: 10px;
     padding: 15px 30px;
     margin: auto;
-    color: #e5e5e5;
+    color: #ffffff;
     bottom: 40px;
     left: 40px;
 }
@@ -98,7 +92,7 @@ img{
     letter-spacing: 5px;
 }
 .Banner_List .Banner_Effect_Button:hover{
-    color: #cfcfcf;
+    color: #ffffff;
     background-image: linear-gradient(360deg,rgba(63, 63, 63, 0.342),rgba(63, 63, 63, 0.342));
 }
 /* ------------人氣商品------------ */
@@ -115,23 +109,27 @@ img{
     display: flex;
 }
 .ScrollBar_Wrap ul li{
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 auto;
 }
+.ScrollBar_Wrap ul li img{
+    object-fit: contain;
+    max-height: 450px;
+}
 .ScrollBar_Wrap ul li .Product_Name{
-    color: #464646;
+    color: #797979;
 }
 .ScrollBar_Wrap ul li .Product_Price{
-    color: #262626;
+    color: #000000;
 }
 .ScrollBar_Wrap ul li:hover .Gallery_Button{
     opacity: 1;
     transition: .5s;
 }
 .ScrollBar_Wrap p{
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 30px;
-    color: rgb(46, 46, 46);
+    color: #797979;
     font-weight: bold;
     letter-spacing: 0;
 }
@@ -143,16 +141,16 @@ img{
     font-size: 16px;
     font-weight: bold;
     padding: 10px 40px;
-    border: 2px solid #4F4F4F;
-    color: #4E4E4E;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6 );
+    border: 2px solid #797979;
+    color: #797979;
+    box-shadow: 0 3px 3px #00000099;
 }
 /* ------------長型廣告區域------------ */
 .Large_Banner{
     text-align: center;
 }
 .Large_Banner h3{
-    color: black;
+    color: #000000;
     margin-bottom: 20px;
     font-weight: bolder;
 }
@@ -173,23 +171,20 @@ img{
 }
 .Player_Card{
     width: 100%;
+    height: 100%;
     position: relative;
-}
-.Player_Card .Front{
-    transform-style:preserve-3d;
-    transition: .5s all ease-out;
-}
-.Player_Card:hover .Front{
-    transform:rotateY(180deg);
-    position:absolute;
-}.Player_Card .Front{
-    backface-visibility:hidden;
 }
 .Hot_Player_Title{
     font-size: 36px;
     text-align: center;
     margin: 0 0 30px;
     font-weight: bolder;
+}
+.Player_Card .Front a img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: top;
 }
 .Hot_Player ul{
     display: flex;
@@ -203,20 +198,21 @@ img{
 }
 .Player_Name{
     font-size: 24px;
-    font-weight: 900;
-    color: #4E4E4E;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #1f1f1f;
+    color: #1f1f1f;
 }
 .Team_Name{
     font-size: 16px;
     font-weight: 900;
-    color: #4E4E4E;
+    color: #797979;
 }
 
 /* 登入註冊頁面 */
 /* ------------登入註冊頁面------------ */
 .Login_Page a{
     line-height: 19px;
-    color:black;
+    color:#000000;
 }
 .Login-Wrapper{
     max-width: 1000px;
@@ -228,29 +224,29 @@ img{
     width: 50%;
 }
 .Login_Item h3{
-    font-size: 28px;
+    font-size: 24px;
+}
+.Login_Item h3{
     text-align: left;
 }
 .Login_Text{
-    width: 100%;
     text-align: left;
 }
 .Login_Text input{
     margin-top: 20px;
     padding: 10px 5px;
-    width: 300px
+    width: 300px;
 }
 .Remember_Forgot{
     display: flex;
     width: 50%;
     justify-content: space-between;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .Login_Button{
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
-    text-align: left;
     margin: 30px auto;
 }
 .Login_Button a{
@@ -263,6 +259,7 @@ img{
 }
 .CheckBox{
     margin: 10px auto;
+    text-align: left;
 }
 .Radio li{
     display: flex;
@@ -280,7 +277,7 @@ img{
 }
 .Left{
     width: 12.5%;
-    background-color: #39363F;
+    background-color: #393f48;
 }
 .Classifty{
     padding: 30px 16px;
@@ -289,15 +286,18 @@ img{
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: bold;
-    color:#cfcfcf;
+    color:#ffffff;
 }
 .Classifty .Classifty_Line{
     width: 100%;
     height: 1px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 .Classifty_List li{
     margin:10px auto;
+}
+.Classifty_List ul li ul{
+    padding: 0 0 0 10px;
 }
 #button_switch{
     display: none;
@@ -307,11 +307,13 @@ img{
 }
 .Classifty_List .EorW{
     width: 100%;
+    display: flex;
     justify-content: space-between;
     background-color: transparent;
     border: 0;
-    color: white;
+    color: #ffffff;
     font-size: 16px;
+    padding: 10px;
 }
 .Classifty_List .EorW +ul{
     display: none;
@@ -336,29 +338,28 @@ img{
     height: 70%;
 }
 .Goods_Grid .Goods_Item .Goods_Txt{
-    width: 100%;
     height: 30%;
-    padding: 0 20px;
+    padding: 0 30px;
+    font-size: 18px;
 }
 .Goods_Txt .Goods_Name{
-    font-size: 14px;
-    color:#464646;
+    color:#333333;
     font-weight:normal;
-    line-height: 18px;
-}
-.Goods_Txt .Goods_Price{
-    color: black;
-    font-weight: bolder;
-    
+    height: 2rem;
+    margin-bottom: 13px;
 }
 .Goods_Txt p{
     text-align: left;
     margin: 10px 0;
+    color: #000000; 
+    font-weight: 600;
+}
+.Goods_Icon_Name{
+    padding: 0 30px;
 }
 .Goods_Icon_Name h3{
     font-size: 24px;
-    font-weight: bold;
-    color: #262626;
+    color: #000000;
     text-align: left;
     margin: 20px auto;
 }
@@ -366,10 +367,108 @@ img{
     display: flex;
     gap: 20px;
     align-items: center;
+    padding: 0 30px;
 }
 .Page_Number .Category{
     padding: 10px 10px;
 }
 /* ------------商品內容頁面------------ */
-
-/* ------------商品內容頁面------------ */
+.Goods_Input{
+    display: flex;
+    padding: 60px;
+    max-width: 1400px;
+    margin: auto;
+}
+.Goods_Input .Goods_Left{
+    width: 60%;
+    display: flex;
+}
+.Goods_Left .Goods_littlepic{
+    width: 25%;
+}
+.Goods_Left .Goods_littlepic img{
+    width: 100%;
+    border: 1px solid black;
+}
+.Goods_Input .Goods_Right{
+    width: 40%;
+    padding: 30px 20px;
+}
+.Goods_Input .Goods_Right .Pd_Title{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.Goods_Input .Goods_Right .Pd_Title .Title,.Pd_Price{
+    font-size:24px;
+    text-align: left;
+}
+.Goods_Input .Goods_Right .Pd_Title .Word{
+    font-size: 16px;
+    text-align: left;
+}
+.Size{
+    margin-top: 30px;
+}
+.Size .size_txt{
+    display: flex;
+    justify-content:space-between;
+    margin: 10px auto 20px;
+}
+.Size .Size_Sec{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.Size .Size_Sec div button{
+    width: 90%;
+    padding: 20px 10px;
+    border:1px solid transparent;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.Size .Size_Sec div button:focus{
+    border:1px solid #797979;
+}
+.Size .Size_Sec div button:hover{
+    border:1px solid #797979;
+}
+.Goods_Right .Button{
+    padding: 0 20px;
+}
+.Goods_Input .Button div{
+    background-color: #000000cb;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    border-radius: 40px;
+    padding: 5px 0;
+}
+.Goods_Input .Button a{
+    margin: 20px;
+    color: #ffffff;
+}
+.Pd_Description{
+    border: 2px solid #797979;
+    padding:10px;
+    text-align: left;
+    line-height: 30px;
+    box-shadow: 10px 10px 20px 5px #6e6e6e8a;
+    border-radius:10px;
+}
+.Pd_Description .Pd_Ttxt P{
+    text-align: left;
+}
+.Pd_Description .SizeModel{
+    text-align: left;
+}
+.Pd_Description label{
+    font-size: 18px;
+    display: flex;
+}
+.Pd_Description label span{
+    margin: 20px 0;
+}
+.Pd_Description label>p{
+    transform: rotate(90deg);
+}
+/* ------------------------ */

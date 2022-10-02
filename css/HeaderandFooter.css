@@ -7,18 +7,18 @@
     z-index: 10;
 }
 #TopHeader_Ad{
-    background-color: #cac8c8;
+    background-color: #fde3a7;
+    color: #111111;
     height: 40px;
     text-align: center;
     line-height: 40px;
 }
 #TopHeader_Ad span{
     width: 100%;
-    font-size: 13px;
-    color: rgba(12, 12, 12, 0.849);
+    font-size: 14px;
 }
 .Navbar{
-    background-color: #0A3665;
+    background-color: rgb(10, 54, 101);
     padding: 0 30px;
 }
 .Navbar-List{
@@ -42,12 +42,9 @@
 }
 .Navbar ul li a{
     font-size: 16px;
-    font-weight: 600;
     padding: 20px;
     text-decoration: none;
-    color: rgb(207, 207, 207);
-    font-family: 'Noto Sans TC', sans-serif;
-    
+    color: #ffffff;    
 }
 .Navbar ul li a:hover{
     color: #ffffff;
@@ -62,17 +59,17 @@
     border-radius: 5px;
 }
 .Search-Bar:hover{
-    background-color: #e5e5e5;
+    background-color: #ffffff;
 }
 .Search-Bar::placeholder{
     background: transparent;
     border: transparent;
-    color: #bebebe;
+    color: #ffffff;
     cursor: pointer;
     outline: 0;
 }
 .Search-Bar:hover::placeholder{
-    color: rgb(101, 101, 101);
+    color: #797979;
 }
 .Search-Btn{
     position: absolute;
@@ -82,7 +79,7 @@
     width: 50px;
     background: transparent;
     border: transparent;
-    font-size: 20px;
+    font-size: 18px;
     color: #000000;
     cursor: pointer;
     outline: 0;
@@ -96,42 +93,47 @@
     margin: 0 5px;
 }
 .Account .Account_Login,.Account_SignUp{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
-    color: #cfcfcf;
+    color: #ffffff;
 }
 /* ------------Footer---------------- */
 .Footer{
-    background-color: #0A3665;
+    background-color: rgb(10, 54, 101);
 }
 .Service{
+    max-width: 1300px;
     padding: 20px 40px;
+    margin: auto;
+}
+.Service .Footer_Logo{
+    width: 30%;
+    margin-bottom: 40px;
 }
 .Service_Wrapper{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff;
     display: flex;
-    max-width: 1300px;
     justify-content: space-between;
-    margin: auto;
 }
 .Service_Item{
     display: flex;
 }
 .Service_Item .Service_List{
     margin-right: 70px;
+    text-align: left;
 }
 .Service_Item h3{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    color: white;
-    margin: 20px;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
 }
-.Service_Item li{
-    font-size: 12px;
-    color: white;
-    margin: 10px;
+.Service_Item .Service_List li{
+    font-size: 14px;
+    color: #ffffff;
     align-items:center;
-    margin:0 10px 30px;
+    margin-bottom: 20px;
 }
 .Icon_Item{
     display: flex;
@@ -143,6 +145,6 @@
 .Tibame_txt{
     font-size: 12px;
     margin: 20px auto;
-    color: white;
+    color: #ffffff;
     line-height: 20px;
 }

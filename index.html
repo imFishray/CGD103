@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA Star Store</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="icon" type="images/png" href="images/simple_logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/HeaderandFooter.css">
+    <link rel="stylesheet" href="main.js">
 </head>
 <body>
     <article class="TopHeader">
@@ -34,7 +36,7 @@
                     <span>/</span>
                     <a href="login.html" class="Account_SignUp">註冊</a>
                 </div>
-                <a href="" class="Shop_Icon"><img src="images/Icon/Icon_shoppingcart.png" alt="Shop_Icon"></a>
+                <a href="shopping cart.html" class="Shop_Icon"><img src="images/Icon/Icon_shoppingcart.png" alt="Shop_Icon"></a>
             </nav>       
         </section>
         <div id="TopHeader_Ad">
@@ -42,7 +44,7 @@
             <span>下單後1~3個工作天出貨 | 7天鑑賞期無條件退貨</span>
         </div>
     </article>
-    <article class="MainHeader">
+    <section class="MainHeader">
         <div class="MainHeader_BG">
             <div class="video">
                 <video src="images/2022_champion.mp4" autoplay muted loop></video>
@@ -55,8 +57,8 @@
                 </div>
             </div>
         </div>
-    </article>
-    <article class="Article">
+    </section>
+    <section class="Article">
         <div class="Banner_Container">
             <div class="Banner_List">
                 <a class="Banner_Card" href="">
@@ -72,7 +74,7 @@
             <div class="Banner_List">
                 <a class="Banner_Card" href="">
                     <div class="Show-Btn">
-                        <img src="images/NBA2K23_GAME.svg">
+                        <img src="images/NBA_NBA2K23.svg">
                         <div class="Mask"></div>
                         <div class="Banner_Effect_Button">
                             <span>立即購買</span>
@@ -81,8 +83,8 @@
                 </a>
             </div>
         </div>        
-    </article>
-    <article class="Article">
+    </section>
+    <section class="Article">
         <div class="Gallery_title">人氣商品</div>
         <div class="Scroll_Gallery">
             <div class="ScrollBar_Wrap">
@@ -102,9 +104,9 @@
                     <li>
                         <a href="">
                             <div>
-                                <img src="images/product_pic.svg">
-                                <p class="Product_Name">PS4遊戲 NBA 2K23-中英文版</p>
-                                <p class="Product_Price">NT$1,790</p>
+                                <img src="images/goods_items/CW3591107_425b44663c98c228d0bac04be62a58b4.jpg">
+                                <p class="Product_Name">NIKE SwingMan球衣 勇士隊 Stephen Curry</p>
+                                <p class="Product_Price">NT$2,680</p>
                             </div>
                         </a>                        
                         <div class="Gallery_Button">
@@ -114,9 +116,9 @@
                     <li>
                         <a href="">
                             <div>
-                                <img src="images/product_pic.svg">
-                                <p class="Product_Name">PS4遊戲 NBA 2K23-中英文版</p>
-                                <p class="Product_Price">NT$1,790</p>
+                                <img src="images/NBA_Model_Curry.jpg">
+                                <p class="Product_Name">ENTERBAY 1/6 NBA公仔 勇士隊 Stephen Curry</p>
+                                <p class="Product_Price">NT$9,200</p>
                             </div>
                         </a>                        
                         <div class="Gallery_Button">
@@ -126,7 +128,7 @@
                     <li>
                         <a href="">
                             <div>
-                                <img src="images/product_pic.svg">
+                                <img src="images/goods_items/3024861-100_DEFAULT.webp">
                                 <p class="Product_Name">PS4遊戲 NBA 2K23-中英文版</p>
                                 <p class="Product_Price">NT$1,790</p>
                             </div>
@@ -138,8 +140,8 @@
                 </ul>
             </div>
         </div>
-    </article>
-    <article class="Article">
+    </section>
+    <section class="Article">
         <div class="Large_Banner">
             <a href=""  class="Banner_List" href="">
                 <h3 class="Large_Banner HeaeLine">隆重介紹 STEVE CURRY</h3>
@@ -147,8 +149,8 @@
                 <img src="images/Steve_Curry_pic.svg" alt="Steve_Curry_pic">
             </a>
         </div>
-    </article>
-    <article class="Article">
+    </section>
+    <section class="Article">
         <div class="Hot_Player">
             <div class="Hot_Player_Title">熱門搜尋球星</div>
             <ul class="Card_Wrapper">
@@ -164,84 +166,101 @@
                     </div>
                 </li>
                 <li class="Player_Card">
-                    <a href="">
-                        <img src="images/player_LeBron.James.jpg" alt="LeBron.James">
-                        <h3 class="Player_Name">LeBron James</h3>
-                        <h3 class="Team_Name">洛杉磯湖人</h3>
-                    </a>
+                    <div class="Front">
+                        <a href="#">
+                            <img src="images/Player_Tatum.jpg" alt="LeBron.James">
+                            <h3 class="Player_Name">Jayson Tatum</h3>
+                            <h3 class="Team_Name">波士頓賽爾提克</h3>
+                        </a>
+                    </div>
+                    <div class="Back">
+                    </div>
                 </li>
                 <li class="Player_Card">
-                    <a href="">
-                        <img src="images/player_LeBron.James.jpg" alt="LeBron.James">
-                        <h3 class="Player_Name">LeBron James</h3>
-                        <h3 class="Team_Name">洛杉磯湖人</h3>
-                    </a>
+                    <div class="Front">
+                        <a href="#">
+                            <img src="images/Player_Ja.Morant.png" alt="LeBron.James">
+                            <h3 class="Player_Name">Ja Morant</h3>
+                            <h3 class="Team_Name">曼菲斯灰熊</h3>
+                        </a>
+                    </div>
+                    <div class="Back">
+                    </div>
                 </li>
                 <li class="Player_Card">
-                    <a href="">
-                        <img src="images/player_LeBron.James.jpg" alt="LeBron.James">
-                        <h3 class="Player_Name">LeBron James</h3>
-                        <h3 class="Team_Name">洛杉磯湖人</h3>
-                    </a>
+                    <div class="Front">
+                        <a href="#">
+                            <img src="images/Player_joelEmbiid.jpg" alt="LeBron.James">
+                            <h3 class="Player_Name">Joel Embiid</h3>
+                            <h3 class="Team_Name">費城76人</h3>
+                        </a>
+                    </div>
+                    <div class="Back">
+                    </div>
                 </li>
                 <li class="Player_Card">
-                    <a href="">
-                        <img src="images/player_LeBron.James.jpg" alt="LeBron.James">
-                        <h3 class="Player_Name">LeBron James</h3>
-                        <h3 class="Team_Name">洛杉磯湖人</h3>
-                    </a>
+                    <div class="Front">
+                        <a href="#">
+                            <img src="images/Player_LukaDoncic.jpg" alt="LeBron.James">
+                            <h3 class="Player_Name">Luka Doncic</h3>
+                            <h3 class="Team_Name">達拉斯獨行者</h3>
+                        </a>
+                    </div>
+                    <div class="Back">
+                    </div>
+                </li>
+                <li class="Player_Card">
+                    <div class="Front">
+                        <a href="#">
+                            <img src="images/Player_TraeYoung.jpg" alt="LeBron.James">
+                            <h3 class="Player_Name">Trae Young</h3>
+                            <h3 class="Team_Name">亞特蘭大老鷹隊</h3>
+                        </a>
+                    </div>
+                    <div class="Back">
+                    </div>
                 </li>
             </ul>
         </div>
-    </article>
+    </section>
     <article class="Footer">
         <div class="Service">
+            <div class="Footer_Logo">
+                <img src="images/Logo.svg" alt="">
+            </div>
             <div class="Service_Wrapper">
-                <div class="Service_Item">
+                <div class="Service_Item">  
                     <div class="Service_List">
                         <h3>客戶服務</h3>
                         <ul>
-                            <li>幫 助</li>
+                            <li>尺寸剪裁說明</li>
+                            <li>訂單說明與配送政策</li>
+                            <li>電子發票與付款說明</li>
                             <li>聯絡我們</li>
                             <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
                         </ul>
                     </div>
                     <div class="Service_List">
-                        <h3>客戶服務</h3>
+                        <h3>訂單及售後</h3>
                         <ul>
-                            <li>幫 助</li>
-                            <li>聯絡我們</li>
-                            <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
+                            <li>電子發票與付款說明</li>
+                            <li>訂單說明與配送政策</li>
+                            <li>退貨說明與配送政策</li>                        </ul>
+                    </div>
+                    <div class="Service_List">
+                        <h3>關於品牌</h3>
+                        <ul>
+                            <li>品牌故事</li>
+                            <li>運動明星</li>
+                            <li>人才招募</li>
+                            <li>挑選指南</li>
                         </ul>
                     </div>
                     <div class="Service_List">
-                        <h3>客戶服務</h3>
-                        <ul>
-                            <li>幫 助</li>
-                            <li>聯絡我們</li>
-                            <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
-                        </ul>
+                        <h3>會員中心</h3>
                     </div>
                     <div class="Service_List">
-                        <h3>客戶服務</h3>
-                        <ul>
-                            <li>幫 助</li>
-                            <li>聯絡我們</li>
-                            <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
-                        </ul>
-                    </div>
-                    <div class="Service_List">
-                        <h3>客戶服務</h3>
-                        <ul>
-                            <li>幫 助</li>
-                            <li>聯絡我們</li>
-                            <li>退貨規則說明</li>
-                            <li>電子發票說明</li>
-                        </ul>
+                        <h3>反詐騙聲明</h3>
                     </div>
                 </div>
                 <div class="Community">
