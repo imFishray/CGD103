@@ -47,8 +47,7 @@
     color: #ffffff;    
 }
 .Navbar ul li a:hover{
-    color: #ffffff;
-    border-bottom: 2px solid red;
+    background-color: rgb(65, 80, 214);
 }
 .Search{
     position: relative;

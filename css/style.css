@@ -8,9 +8,8 @@ a,h3,span,div{
 img{
     width: 100%;
 }
-.Article{
+.Interval{
     margin-bottom: 80px;
-    width: 100%;
 } 
 /* ----------------------MainHeader-------------------------- */
 .MainHeader{
@@ -42,8 +41,12 @@ img{
     font-weight: bold;
     padding: 10px 20px;
     background-color: #ffffff;
-    border: 2px solid #797979;
-    border-radius: 10px;
+    border: 2px solid #1f1f1f;
+}
+.MainHeader_BG_ProjectBox .Button:hover a{
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: none;
 }
 .MainHeader_BG_ProjectBox .Headline{
     font-size: 48px;
@@ -114,7 +117,7 @@ img{
 }
 .ScrollBar_Wrap ul li img{
     object-fit: contain;
-    max-height: 450px;
+    height: 400px;
 }
 .ScrollBar_Wrap ul li .Product_Name{
     color: #797979;
@@ -182,7 +185,7 @@ img{
 }
 .Player_Card .Front a img{
     width: 100%;
-    max-height: 300px;
+    height: 300px;
     object-fit: cover;
     object-position: top;
 }
@@ -340,7 +343,7 @@ img{
 .Goods_Grid .Goods_Item .Goods_Txt{
     height: 30%;
     padding: 0 30px;
-    font-size: 18px;
+    font-size: 16px;
 }
 .Goods_Txt .Goods_Name{
     color:#333333;
@@ -363,14 +366,33 @@ img{
     text-align: left;
     margin: 20px auto;
 }
-.Page_Number{
+.Goods_Number{
     display: flex;
     gap: 20px;
     align-items: center;
     padding: 0 30px;
 }
-.Page_Number .Category{
+.Goods_Number .Category{
     padding: 10px 10px;
+}
+.Pgec{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.Pgec .Page_Contrl{
+    padding: 10px 20px;
+}
+.Pgec .Page button{
+    padding: 10px;
+}
+.Pgec button:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+.Pgec button:focus{
+    background-color: #000000;
+    color: #ffffff;
 }
 /* ------------商品內容頁面------------ */
 .Goods_Input{
@@ -412,7 +434,10 @@ img{
 .Size .size_txt{
     display: flex;
     justify-content:space-between;
-    margin: 10px auto 20px;
+    margin: 20px 0;
+}
+.Size .size_txt a{
+    color: #333333;
 }
 .Size .Size_Sec{
     display: grid;
@@ -422,29 +447,29 @@ img{
 .Size .Size_Sec div button{
     width: 90%;
     padding: 20px 10px;
-    border:1px solid transparent;
+    border:2px solid transparent;
     border-radius: 10px;
     font-size: 16px;
 }
-.Size .Size_Sec div button:focus{
-    border:1px solid #797979;
+.Size .Size_Sec button:focus{
+    border:2px solid #797979;
 }
-.Size .Size_Sec div button:hover{
-    border:1px solid #797979;
+.Size .Size_Sec button:hover{
+    border:2px solid #797979;
 }
 .Goods_Right .Button{
     padding: 0 20px;
 }
-.Goods_Input .Button div{
+.Goods_Right .Button:hover a{
+    background-color: rgba(109, 108, 108, 0.644);
+}
+.Goods_Input .Button a{
     background-color: #000000cb;
     display: flex;
     margin: 20px auto;
     justify-content: center;
     border-radius: 40px;
-    padding: 5px 0;
-}
-.Goods_Input .Button a{
-    margin: 20px;
+    padding: 20px 0;
     color: #ffffff;
 }
 .Pd_Description{
