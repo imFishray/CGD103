@@ -84,17 +84,21 @@
     outline: 0;
 }
 .Account{
+    margin: auto 20px;
+}
+.Account a{
     display: flex;
-    align-items: center;
-    margin: 0 10px;
 }
-.Account span{
-    margin: 0 5px;
+.Account img{
+    width: 24px;
+    height: 24px;
 }
-.Account .Account_Login,.Account_SignUp{
+.Account span
+{
     font-size: 12px;
     font-weight: 600;
     color: #ffffff;
+    margin: auto 5px;
 }
 /* ------------Footer---------------- */
 .Footer{

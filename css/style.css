@@ -117,7 +117,7 @@ img{
 }
 .ScrollBar_Wrap ul li img{
     object-fit: contain;
-    height: 400px;
+    height: 360px;
 }
 .ScrollBar_Wrap ul li .Product_Name{
     color: #797979;
@@ -450,6 +450,7 @@ img{
     border:2px solid transparent;
     border-radius: 10px;
     font-size: 16px;
+    background-color:transparent;
 }
 .Size .Size_Sec button:focus{
     border:2px solid #797979;
