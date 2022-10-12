@@ -9,7 +9,7 @@
     <link rel="icon" type="images/png" href="images/simple_logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/HeaderandFooter.css">
-    <link rel="stylesheet" href="main.js">
+    <script src="main.js"></script>
 </head>
 <body>
     <section class="TopHeader">
@@ -18,7 +18,12 @@
                 <div class="Logo">
                     <a href="index.html"><img src="images/Logo.svg"></a>
                 </div>
-                <ul class="Nav-Item">
+                <button id="Burger_Button">
+                    <span class="hamberger_img">　　</span>
+                    <span class="hamberger_img">　　</span>
+                    <span class="hamberger_img">　　</span>
+                </button>
+                <ul id="Nav-Item" class="hidden">
                     <li><a href="GoodsList.html">球 衣</a></li>
                     <li><a href="GoodsList.html">配 件</a></li>
                     <li><a href="GoodsList.html">鞋 類</a></li>
@@ -26,6 +31,7 @@
                     <li><a href="#">新 聞</a> </li>
                     <li><a href="#">球星介紹</a></li>
                 </ul>
+                <!-- <div class="BackDrop"></div> -->
                 <div class="Search">
                     <input class="Search-Bar" type="Text" name="Search" id="Search" placeholder="搜尋">
                     <button class="Search-Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -39,9 +45,10 @@
                     </a>
                 </div>
                 <a href="shopping cart.html" class="Shop_Icon"><img src="images/Icon/Icon_shoppingcart.png" alt="Shop_Icon"></a>
+                
             </nav>       
         </section>
-        <div id="TopHeader_Ad">
+        <div class="TopHeader_Ad">
             <span> 消費滿1,500元即享免運優惠 | </span>
             <span>下單後1~3個工作天出貨 | 7天鑑賞期無條件退貨</span>
         </div>

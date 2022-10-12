@@ -1,3 +1,160 @@
+
+/* header
+-------------------------------- */
+.TopHeader{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.TopHeader_Ad{
+    background-color: #fde3a7;
+    color: #111111;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.TopHeader_Ad span{
+    width: 100%;
+    font-size: 14px;
+}
+.Navbar{
+    background-color: rgb(10, 54, 101);
+    padding: 0 30px;
+}
+.Navbar-List{
+    display: flex;
+    align-items: center;
+}
+.Logo img{
+    width: auto;
+    height: 60px;
+}
+#Nav-Item{
+    display: flex;
+    height: 60px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#Nav-Item li{
+    width: auto;
+    list-style-type: none;
+}
+#Nav-Item li a{
+    font-size: 16px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;    
+}
+#Nav-Item li a:hover{
+    background-color: rgb(65, 80, 214);
+}
+.Search{
+    position: relative;
+}
+.Search-Bar{
+    width: 100px;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+.Search-Bar:hover{
+    background-color: #ffffff;
+}
+.Search-Bar::placeholder{
+    background: transparent;
+    border: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    outline: 0;
+}
+.Search-Bar:hover::placeholder{
+    color: #797979;
+}
+.Search-Btn{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    border: transparent;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    outline: 0;
+}
+.Account{
+    margin: auto 20px;
+}
+.Account a{
+    display: flex;
+}
+.Account img{
+    width: 24px;
+    height: 24px;
+}
+.Account span
+{
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: auto 5px;
+}
+#Burger_Button{
+    display: none;
+}
+/* ------------Footer---------------- */
+.Footer{
+    background-color: rgb(10, 54, 101);
+}
+.Service{
+    max-width: 1300px;
+    padding: 20px 40px;
+    margin: auto;
+}
+.Service .Footer_Logo{
+    width: 30%;
+    margin-bottom: 40px;
+}
+.Service_Wrapper{
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.Service_Item{
+    display: flex;
+}
+.Service_Item .Service_List{
+    margin-right: 70px;
+    text-align: left;
+}
+.Service_Item h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.Service_Item .Service_List li{
+    font-size: 14px;
+    color: #ffffff;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.Icon_Item{
+    display: flex;
+    gap: 20px;
+}
+.Community .Community_Icon{
+    margin: 30px;
+}
+.Tibame_txt{
+    font-size: 12px;
+    margin: 20px auto;
+    color: #ffffff;
+    line-height: 20px;
+}
 /* ----------------------共有區域-------------------------- */
 a,h3,span,div{
     font-family:"Microsoft YaHei";
@@ -260,7 +417,7 @@ img{
     background-color: black;
     color: white;
 }
-.CheckBox{
+.Login_Item .CheckBox{
     margin: 10px auto;
     text-align: left;
 }
@@ -498,3 +655,43 @@ img{
     transform: rotate(90deg);
 }
 /* ------------------------ */
+@media screen and (max-width: 1200px){
+    #Nav-Item{
+        position: fixed;
+        z-index: 100;
+        display: block;
+        top: 0;
+        left: 0;
+        background-color: rgb(48, 48, 48);
+        width: 300px;
+        height: 100vh;
+        transition: 0.5s,width;
+    }
+    #Nav-Item.hidden{
+        left: -300px;
+    }
+    /* .Navbar .Navbar-List .BackDrop{
+        position: absolute;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 100vmax;
+        opacity: 1;
+    } */
+    .Navbar #Nav-Item li{
+        margin: 40px auto;
+    }
+    #Burger_Button{
+        margin-left: auto;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+    }
+    #Burger_Button .hamberger_img{
+        display: flex;
+        margin: 6px auto;
+        height: 4px;
+        background-color: rgb(245, 245, 245);
+    }
+}
