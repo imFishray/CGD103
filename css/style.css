@@ -51,10 +51,10 @@
     background-color: rgb(65, 80, 214);
 }
 .Search{
-    position: relative;
+    position:relative;
 }
 .Search-Bar{
-    width: 100px;
+    width: 200px;
     padding:5px 10px;
     border-radius: 5px;
 }
@@ -74,9 +74,7 @@
 .Search-Btn{
     position: absolute;
     right: 0;
-    top: 2px;
-    height: 100%;
-    width: 50px;
+    top: 3px;
     background: transparent;
     border: transparent;
     font-size: 18px;
@@ -89,10 +87,6 @@
 }
 .Account a{
     display: flex;
-}
-.Account img{
-    width: 24px;
-    height: 24px;
 }
 .Account span
 {
@@ -664,7 +658,7 @@ img{
         left: 0;
         background-color: rgb(48, 48, 48);
         width: 300px;
-        height: 100vh;
+        height: 100%;
         transition: 0.5s,width;
     }
     #Nav-Item.hidden{
@@ -694,4 +688,312 @@ img{
         height: 4px;
         background-color: rgb(245, 245, 245);
     }
+}
+/* 手機 */
+@media screen and (max-width: 779px){
+    .Logo img{
+        width: auto;
+        height: 40px;
+    }
+    .TopHeader_Ad{
+        padding: 0 10px;
+        overflow: hidden;
+    }
+    .TopHeader_Ad span{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .Search{
+        position: static;
+    }
+    .Search-Bar{
+        display: none;
+    }
+    .Search-Btn{
+        color: #ffffff;
+        position: inherit;
+    }
+    .Account span
+    {
+        display: none;
+    }
+    #Burger_Button{
+        display: block;
+    }
+}
+/* ------------Footer---------------- */
+.Footer{
+    background-color: rgb(10, 54, 101);
+}
+.Service{
+    max-width: 1300px;
+    padding: 20px 40px;
+    margin: auto;
+}
+.Service .Footer_Logo{
+    width: 30%;
+    margin-bottom: 40px;
+}
+.Service_Wrapper{
+    border-bottom: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+.Service_Item{
+    display: flex;
+}
+.Service_Item .Service_List{
+    margin-right: 70px;
+    text-align: left;
+}
+.Service_Item h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.Service_Item .Service_List li{
+    font-size: 14px;
+    color: #ffffff;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.Icon_Item{
+    display: flex;
+    gap: 20px;
+}
+.Community .Community_Icon{
+    margin: 30px;
+}
+.Tibame_txt{
+    font-size: 12px;
+    margin: 20px auto;
+    color: #ffffff;
+    line-height: 20px;
+}
+
+
+/* ----------------------MainHeader-------------------------- */
+.MainHeader{
+    width: auto;
+    align-items: center;
+}
+.MainHeader_BG .video{
+    display: flex;
+    max-height: 820px;
+    height: auto;   
+}
+.MainHeader_BG .video video{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.MainHeader_BG_ProjectBox{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 30px auto 80px;
+}
+.MainHeader_BG_ProjectBox .Button{
+    margin: 15px auto;
+    padding: 10px;
+}
+.MainHeader_BG_ProjectBox .Button a{
+    color: #797979;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 2px solid #1f1f1f;
+}
+.MainHeader_BG_ProjectBox .Button:hover a{
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: none;
+}
+.MainHeader_BG_ProjectBox .Headline{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+.MainHeader_BG_ProjectBox .Subtitle{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    color:#797979;
+}
+/* ------------小廣告區域------------ */
+.Banner_Container{
+    display: flex;
+}
+.Banner_Container .Banner_card{
+    width: 0;
+    flex-grow: 1;
+}
+.Banner_Container .Show-Btn .Mask{
+    position: absolute;
+    height: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(360deg,rgb(0, 0, 0), rgb(2, 2, 2,0));
+}
+.Banner_Container .Show-Btn{
+    position: relative;
+}
+.Banner_List .Banner_Effect_Button{
+    background-color: rgb(65, 80, 214);
+    position: absolute;
+    font-size: 16px;
+    font-weight: 900;
+    border:5px solid white;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: auto;
+    color: #ffffff;
+    bottom: 40px;
+    left: 40px;
+}
+.Banner_List .Banner_Effect_Button span{
+    letter-spacing: 5px;
+}
+.Banner_List .Banner_Effect_Button:hover{
+    color: #ffffff;
+    background-image: linear-gradient(360deg,rgba(63, 63, 63, 0.342),rgba(63, 63, 63, 0.342));
+}
+/* ------------人氣商品------------ */
+.Gallery_title{
+    font-size: 36px;
+    text-align: center;
+    padding: 20px 0 40px;
+    font-weight: bolder;
+}
+.ScrollBar_Wrap{
+    overflow-x: scroll;
+}
+.ScrollBar_Wrap ul{
+    display: inline-flex;
+}
+.ScrollBar_Wrap ul li{
+    width: 100vw;
+}
+.ScrollBar_Wrap ul li .Product_Name{
+    color: #797979;
+}
+.ScrollBar_Wrap ul li .Product_Price{
+    color: #000000;
+}
+.ScrollBar_Wrap p{
+    font-size: 18px;
+    padding: 10px 30px;
+    color: #797979;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+.ScrollBar_Wrap .Gallery_Button{
+    opacity: 1;
+}
+.ScrollBar_Wrap .Gallery_Button a{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 2px solid #797979;
+    color: #797979;
+    box-shadow: 0 3px 3px #00000099;
+}
+/* ------------長型廣告區域------------ */
+.Large_Banner{
+    text-align: center;
+}
+.Large_Banner h3{
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.Large_Banner .HeaeLine{
+    font-size: 48px;
+}
+.Large_Banner .Secondary{
+    font-size: 24px;
+    color: #797979;
+    letter-spacing: 0;
+}
+.Large_Banner img{
+    width: 100%;
+}
+/* ------------熱門球星區域------------ */
+.Card_Wrapper{
+    padding: 0 50px;
+}
+.Player_Card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.Hot_Player_Title{
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 30px;
+    font-weight: bolder;
+}
+.Player_Card .Front a img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+.Hot_Player ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow: scroll;
+}
+.Hot_Player ul li{
+    margin: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+.Player_Name{
+    font-size: 24px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #1f1f1f;
+    color: #1f1f1f;
+}
+.Team_Name{
+    font-size: 16px;
+    font-weight: 900;
+    color: #797979;
+}
+/* ------------Footer---------------- */
+.Service .Footer_Logo{
+    width: 80%;
+    margin-bottom: 40px;
+}
+.Service_Wrapper{
+    display: block;
+}
+.Service_Item{
+    display: block;
+}
+.Service_Item .Service_List{
+    margin-right: 70px;
+    text-align: left;
+}
+.Service_Item .Service_List li{
+    display: none;
+}
+.Community .Community_Icon{
+    margin: 30px auto;
+}
+.Icon_Item{
+    display: flex;
+}
+.Icon_Item li{
+    width: 35px;
+}
+.Tibame_txt{
+    font-size: 12px;
+    margin: 20px auto;
+    color: #ffffff;
+    line-height: 20px;
 }
