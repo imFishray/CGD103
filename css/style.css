@@ -54,22 +54,15 @@
     position:relative;
 }
 .Search-Bar{
-    width: 200px;
+    width: 180px;
     padding:5px 10px;
     border-radius: 5px;
-}
-.Search-Bar:hover{
-    background-color: #ffffff;
+    outline: 0;
 }
 .Search-Bar::placeholder{
     background: transparent;
-    border: transparent;
-    color: #ffffff;
-    cursor: pointer;
-    outline: 0;
-}
-.Search-Bar:hover::placeholder{
     color: #797979;
+    cursor: pointer;
 }
 .Search-Btn{
     position: absolute;
@@ -88,12 +81,18 @@
 .Account a{
     display: flex;
 }
+.Account a img{
+    width: 24px;
+}
 .Account span
 {
     font-size: 12px;
     font-weight: 600;
     color: #ffffff;
     margin: auto 5px;
+}
+.Index_ShoppingCart a{
+    display: flex;
 }
 #Burger_Button{
     display: none;
@@ -260,7 +259,6 @@ img{
     width: 100%;
 }
 .ScrollBar_Wrap ul{
-    display: flex;
 }
 .ScrollBar_Wrap ul li{
     font-size: 18px;
@@ -424,7 +422,6 @@ img{
 .Radio li label{
     line-height: 19px;
 }
-/* 商品列表頁面 */
 /* ------------商品列表頁面------------ */
 .Goods{
     display: flex;
@@ -478,6 +475,17 @@ img{
 }
 .Goods_List{
     padding: 20px 40px;
+}
+.Goods_Tag{
+    text-align: left;
+    padding: 0 30px;
+    margin: 20px 0;
+}
+.Goods_Tag span{
+    color: #797979;
+}
+.Goods_Tag span:nth-child(3){
+    color: #000000;
 }
 .Goods_Grid{
     display: grid;
@@ -675,22 +683,23 @@ img{
         margin: 40px auto;
     }
     #Burger_Button{
-        margin-left: auto;
         display: block;
-        width: 40px;
-        height: 40px;
         background-color: transparent;
         border: none;
     }
     #Burger_Button .hamberger_img{
         display: flex;
         margin: 6px auto;
-        height: 4px;
+        width: 24px;
+        height: 3px;
         background-color: rgb(245, 245, 245);
     }
 }
 /* 手機 */
 @media screen and (max-width: 779px){
+    .Logo{
+        margin-right: auto;
+    }
     .Logo img{
         width: auto;
         height: 40px;
@@ -713,287 +722,247 @@ img{
         color: #ffffff;
         position: inherit;
     }
-    .Account span
-    {
+    .Account {
         display: none;
     }
     #Burger_Button{
         display: block;
     }
-}
-/* ------------Footer---------------- */
-.Footer{
-    background-color: rgb(10, 54, 101);
-}
-.Service{
-    max-width: 1300px;
-    padding: 20px 40px;
-    margin: auto;
-}
-.Service .Footer_Logo{
-    width: 30%;
-    margin-bottom: 40px;
-}
-.Service_Wrapper{
-    border-bottom: 1px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-}
-.Service_Item{
-    display: flex;
-}
-.Service_Item .Service_List{
-    margin-right: 70px;
-    text-align: left;
-}
-.Service_Item h3{
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: left;
-    margin-bottom: 20px;
-}
-.Service_Item .Service_List li{
-    font-size: 14px;
-    color: #ffffff;
-    align-items:center;
-    margin-bottom: 20px;
-}
-.Icon_Item{
-    display: flex;
-    gap: 20px;
-}
-.Community .Community_Icon{
-    margin: 30px;
-}
-.Tibame_txt{
-    font-size: 12px;
-    margin: 20px auto;
-    color: #ffffff;
-    line-height: 20px;
-}
-
-
-/* ----------------------MainHeader-------------------------- */
-.MainHeader{
-    width: auto;
-    align-items: center;
-}
-.MainHeader_BG .video{
-    display: flex;
-    max-height: 820px;
-    height: auto;   
-}
-.MainHeader_BG .video video{
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
-.MainHeader_BG_ProjectBox{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 30px auto 80px;
-}
-.MainHeader_BG_ProjectBox .Button{
-    margin: 15px auto;
-    padding: 10px;
-}
-.MainHeader_BG_ProjectBox .Button a{
-    color: #797979;
-    font-weight: bold;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    border: 2px solid #1f1f1f;
-}
-.MainHeader_BG_ProjectBox .Button:hover a{
-    background-color: #1f1f1f;
-    color: #ffffff;
-    border: none;
-}
-.MainHeader_BG_ProjectBox .Headline{
-    font-size: 48px;
-    font-weight: 900;
-    text-align: center;
-}
-.MainHeader_BG_ProjectBox .Subtitle{
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.5;
-    color:#797979;
-}
-/* ------------小廣告區域------------ */
-.Banner_Container{
-    display: flex;
-}
-.Banner_Container .Banner_card{
-    width: 0;
-    flex-grow: 1;
-}
-.Banner_Container .Show-Btn .Mask{
-    position: absolute;
-    height: 150px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(360deg,rgb(0, 0, 0), rgb(2, 2, 2,0));
-}
-.Banner_Container .Show-Btn{
-    position: relative;
-}
-.Banner_List .Banner_Effect_Button{
-    background-color: rgb(65, 80, 214);
-    position: absolute;
-    font-size: 16px;
-    font-weight: 900;
-    border:5px solid white;
-    border-radius: 10px;
-    padding: 15px 30px;
-    margin: auto;
-    color: #ffffff;
-    bottom: 40px;
-    left: 40px;
-}
-.Banner_List .Banner_Effect_Button span{
-    letter-spacing: 5px;
-}
-.Banner_List .Banner_Effect_Button:hover{
-    color: #ffffff;
-    background-image: linear-gradient(360deg,rgba(63, 63, 63, 0.342),rgba(63, 63, 63, 0.342));
-}
-/* ------------人氣商品------------ */
-.Gallery_title{
-    font-size: 36px;
-    text-align: center;
-    padding: 20px 0 40px;
-    font-weight: bolder;
-}
-.ScrollBar_Wrap{
-    overflow-x: scroll;
-}
-.ScrollBar_Wrap ul{
-    display: inline-flex;
-}
-.ScrollBar_Wrap ul li{
-    width: 100vw;
-}
-.ScrollBar_Wrap ul li .Product_Name{
-    color: #797979;
-}
-.ScrollBar_Wrap ul li .Product_Price{
-    color: #000000;
-}
-.ScrollBar_Wrap p{
-    font-size: 18px;
-    padding: 10px 30px;
-    color: #797979;
-    font-weight: bold;
-    letter-spacing: 0;
-}
-.ScrollBar_Wrap .Gallery_Button{
-    opacity: 1;
-}
-.ScrollBar_Wrap .Gallery_Button a{
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px 40px;
-    border: 2px solid #797979;
-    color: #797979;
-    box-shadow: 0 3px 3px #00000099;
-}
-/* ------------長型廣告區域------------ */
-.Large_Banner{
-    text-align: center;
-}
-.Large_Banner h3{
-    color: #000000;
-    margin-bottom: 20px;
-    font-weight: bolder;
-}
-.Large_Banner .HeaeLine{
-    font-size: 48px;
-}
-.Large_Banner .Secondary{
-    font-size: 24px;
-    color: #797979;
-    letter-spacing: 0;
-}
-.Large_Banner img{
-    width: 100%;
-}
-/* ------------熱門球星區域------------ */
-.Card_Wrapper{
-    padding: 0 50px;
-}
-.Player_Card{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-.Hot_Player_Title{
-    font-size: 36px;
-    text-align: center;
-    margin: 0 0 30px;
-    font-weight: bolder;
-}
-.Player_Card .Front a img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: top;
-}
-.Hot_Player ul{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    overflow: scroll;
-}
-.Hot_Player ul li{
-    margin: 10px;
-    text-align: center;
-    line-height: 1.5;
-}
-.Player_Name{
-    font-size: 24px;
-    font-weight: bold;
-    -webkit-text-stroke: 1px #1f1f1f;
-    color: #1f1f1f;
-}
-.Team_Name{
-    font-size: 16px;
-    font-weight: 900;
-    color: #797979;
-}
-/* ------------Footer---------------- */
-.Service .Footer_Logo{
-    width: 80%;
-    margin-bottom: 40px;
-}
-.Service_Wrapper{
-    display: block;
-}
-.Service_Item{
-    display: block;
-}
-.Service_Item .Service_List{
-    margin-right: 70px;
-    text-align: left;
-}
-.Service_Item .Service_List li{
-    display: none;
-}
-.Community .Community_Icon{
-    margin: 30px auto;
-}
-.Icon_Item{
-    display: flex;
-}
-.Icon_Item li{
-    width: 35px;
-}
-.Tibame_txt{
-    font-size: 12px;
-    margin: 20px auto;
-    color: #ffffff;
-    line-height: 20px;
+    /* -------------MainHeade------------ */
+    .MainHeader_BG_ProjectBox .Headline{
+        font-size: 36px;
+    }
+    /* ------------小廣告區域------------ */
+    .Banner_Container{
+        display: block;
+    }
+    .Banner_List .Banner_Effect_Button{
+        font-size: 12px;
+        font-weight: 900;
+        border:2px solid white;
+        border-radius: 10px;
+        padding: 10px 16px;
+        margin: auto;
+        color: #ffffff;
+        bottom: 20px;
+        left: 20px;
+    }
+    .Banner_List .Banner_Effect_Button span{
+        letter-spacing: 5px;
+    }
+    .Banner_List .Banner_Effect_Button:hover{
+        color: #ffffff;
+        background-image: linear-gradient(360deg,rgba(63, 63, 63, 0.342),rgba(63, 63, 63, 0.342));
+    }
+    /* ------------人氣商品------------ */
+    .ScrollBar_Wrap{
+        overflow-x: scroll;
+    }
+    .ScrollBar_Wrap ul{
+        display: inline-flex;
+    }
+    .ScrollBar_Wrap ul li{
+        width: 100vw;
+    }
+    .ScrollBar_Wrap .Gallery_Button{
+        opacity: 1;
+    }
+    /* ------------長型廣告區域------------ */
+    .Large_Banner{
+        text-align: center;
+    }
+    .Large_Banner h3{
+        color: #000000;
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+    .Large_Banner .HeaeLine{
+        font-size: 48px;
+    }
+    .Large_Banner .Secondary{
+        font-size: 24px;
+        color: #797979;
+        letter-spacing: 0;
+    }
+    .Large_Banner img{
+        width: 100%;
+    }
+    /* ------------熱門球星區域------------ */
+    .Card_Wrapper{
+        padding: 0 50px;
+    }
+    .Player_Card{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .Hot_Player_Title{
+        font-size: 36px;
+        text-align: center;
+        margin: 0 0 30px;
+        font-weight: bolder;
+    }
+    .Player_Card .Front a img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+    }
+    .Hot_Player ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        overflow: scroll;
+    }
+    .Hot_Player ul li{
+        margin: 10px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .Player_Name{
+        font-size: 24px;
+        font-weight: bold;
+        -webkit-text-stroke: 1px #1f1f1f;
+        color: #1f1f1f;
+    }
+    .Team_Name{
+        font-size: 16px;
+        font-weight: 900;
+        color: #797979;
+    }
+    /* ------------Footer---------------- */
+    .Service .Footer_Logo{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .Service_Wrapper{
+        display: block;
+    }
+    .Service_Item{
+        display: block;
+    }
+    .Service_Item .Service_List{
+        margin-right: 70px;
+        text-align: left;
+    }
+    .Service_Item .Service_List li{
+        display: none;
+    }
+    .Community .Community_Icon{
+        margin: 30px auto;
+    }
+    .Icon_Item{
+        display: flex;
+    }
+    .Icon_Item li{
+        width: 35px;
+    }
+    .Tibame_txt{
+        font-size: 12px;
+        margin: 20px auto;
+        color: #ffffff;
+        line-height: 20px;
+    }
+    /* ------------商品列表頁面------------ */
+    .Left{
+        position: absolute;
+        width: 100%;
+        display: none;
+    }
+    #button_switch{
+        display: none;
+    }   
+    #button_switch:checked+.Goods .Classifty_List ul li ul{
+        display: block;
+    }
+    .Classifty_List .EorW{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        border: 0;
+        color: #ffffff;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .Classifty_List .EorW +ul{
+        display: none;
+    }
+    .Right{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .Goods_List{
+        padding: 0;
+    }
+    .Goods_Grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+    }
+    .Goods_Grid .Goods_Item{
+        margin: 20px auto;
+    }
+    .Goods_Grid .Goods_Item img{
+        height: 70%;
+    }
+    .Goods_Grid .Goods_Item .Goods_Txt{
+        height: 30%;
+        padding: 0 15px;
+        font-size: 14px;
+    }
+    .Goods_Txt .Goods_Name{
+        color:#333333;
+        font-weight:normal;
+        height: 2rem;
+        margin-bottom: 30px;
+    }
+    .Goods_Txt p{
+        text-align: left;
+        margin: 0;
+        color: #000000; 
+        font-weight: 600;
+    }
+    .Goods_Icon_Name{
+        padding: 0 30px;
+    }
+    .Goods_Icon_Name img{
+        content: url(../images/warrior_goods_mb.jpeg);
+    }
+    .Goods_Icon_Name h3{
+        font-size: 24px;
+        color: #000000;
+        text-align: left;
+        margin: 20px auto;
+    }
+    .Goods_Number{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 0 30px;
+    }
+    .Goods_Number .Category{
+        padding: 10px 10px;
+    }
+    .Pgec{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px auto;
+    }
+    .Pgec .Page_Contrl{
+        padding: 10px 20px;
+    }
+    .Pgec .Page button{
+        padding: 10px;
+    }
+    .Pgec button:hover{
+        background-color: #000000;
+        color: #ffffff;
+    }
+    .Pgec button:focus{
+        background-color: #000000;
+        color: #ffffff;
+    }
 }
