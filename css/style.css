@@ -258,8 +258,6 @@ img{
 .Scroll_Gallery{
     width: 100%;
 }
-.ScrollBar_Wrap ul{
-}
 .ScrollBar_Wrap ul li{
     font-size: 18px;
     margin: 0 auto;
@@ -680,7 +678,10 @@ img{
         opacity: 1;
     } */
     .Navbar #Nav-Item li{
-        margin: 40px auto;
+        margin: 30px auto;
+    }
+    .Navbar #Nav-Item li a{
+        font-size: 18px;
     }
     #Burger_Button{
         display: block;
@@ -711,6 +712,18 @@ img{
     .TopHeader_Ad span{
         font-size: 12px;
         font-weight: bold;
+    }
+    .Account_mb_btn{
+        text-align: right;
+        padding:10px 20px;
+    }
+    .Account_mb_btn button{
+        margin-top: 20px;
+        padding: 4px 24px;
+        font-size: 18px;
+        background-color:transparent;
+        border: 2px solid white;
+        color: white;
     }
     .Search{
         position: static;
@@ -896,10 +909,8 @@ img{
         padding: 0;
     }
     .Goods_Grid{
-        display: grid;
         grid-template-columns: repeat(2,1fr);
-        width: 90%;
-        margin: auto;
+        width: 100%;
     }
     .Goods_Grid .Goods_Item{
         margin: 20px auto;
@@ -924,38 +935,11 @@ img{
         color: #000000; 
         font-weight: 600;
     }
-    .Goods_Icon_Name{
-        padding: 0 30px;
-    }
     .Goods_Icon_Name img{
         content: url(../images/warrior_goods_mb.jpeg);
     }
-    .Goods_Icon_Name h3{
-        font-size: 24px;
-        color: #000000;
-        text-align: left;
-        margin: 20px auto;
-    }
-    .Goods_Number{
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        padding: 0 30px;
-    }
-    .Goods_Number .Category{
-        padding: 10px 10px;
-    }
     .Pgec{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
         margin: 20px auto;
-    }
-    .Pgec .Page_Contrl{
-        padding: 10px 20px;
-    }
-    .Pgec .Page button{
-        padding: 10px;
     }
     .Pgec button:hover{
         background-color: #000000;
@@ -964,5 +948,18 @@ img{
     .Pgec button:focus{
         background-color: #000000;
         color: #ffffff;
+    }
+    /* 登入註冊頁面 */
+    /* ------------登入註冊頁面------------ */
+    .Login_Page a{
+        line-height: 19px;
+        color:#000000;
+    }
+    .Login-Wrapper{ 
+        display: block;
+        margin: 5% 10% 5%;
+    }
+    .Login_Item{
+        width: 100%;
     }
 }
