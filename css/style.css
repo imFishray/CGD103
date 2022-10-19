@@ -50,6 +50,9 @@
 #Nav-Item li a:hover{
     background-color: rgb(65, 80, 214);
 }
+.Account_mb_btn{
+    display: none;
+}
 .Search{
     position:relative;
 }
@@ -93,6 +96,11 @@
 }
 .Index_ShoppingCart a{
     display: flex;
+    color: white;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
 }
 #Burger_Button{
     display: none;
@@ -161,6 +169,11 @@ img{
 .Interval{
     margin-bottom: 80px;
 } 
+button,input{
+    /* -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none; */
+}
 /* ----------------------MainHeader-------------------------- */
 .MainHeader{
     width: auto;
@@ -179,7 +192,6 @@ img{
 .MainHeader_BG_ProjectBox{
     width: 100%;
     height: auto;
-    text-align: center;
     margin: 30px auto 80px;
 }
 .MainHeader_BG_ProjectBox .Button{
@@ -531,6 +543,9 @@ img{
 }
 .Goods_Number .Category{
     padding: 10px 10px;
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;
 }
 .Pgec{
     display: flex;
@@ -654,6 +669,16 @@ img{
 .Pd_Description label>p{
     transform: rotate(90deg);
 }
+/* 購物車區域 */
+.Shopping_Cart{
+    margin: 30px auto;
+    max-width: 1500px;
+    padding: 0 10%;
+}
+.Cart_Item{
+    display: flex;
+}
+.Cart_Item 
 /* ------------------------ */
 @media screen and (max-width: 1200px){
     #Nav-Item{
@@ -687,12 +712,13 @@ img{
         display: block;
         background-color: transparent;
         border: none;
+        padding: 0;
     }
     #Burger_Button .hamberger_img{
         display: flex;
-        margin: 6px auto;
         width: 24px;
         height: 3px;
+        margin: 2.5px;
         background-color: rgb(245, 245, 245);
     }
 }
@@ -714,6 +740,7 @@ img{
         font-weight: bold;
     }
     .Account_mb_btn{
+        display: block;
         text-align: right;
         padding:10px 20px;
     }
@@ -727,23 +754,36 @@ img{
     }
     .Search{
         position: static;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .Search-Bar{
         display: none;
     }
     .Search-Btn{
-        color: #ffffff;
-        position: inherit;
+        position: static;
+        color: #fff;
     }
     .Account {
         display: none;
     }
     #Burger_Button{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     /* -------------MainHeade------------ */
     .MainHeader_BG_ProjectBox .Headline{
         font-size: 36px;
+    }
+    .MainHeader_BG_ProjectBox .Button:hover a{
+        color: #797979;
+        font-weight: bold;
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border: 2px solid #1f1f1f;
     }
     /* ------------小廣告區域------------ */
     .Banner_Container{

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" type="images/png" href="images/simple_logo.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/HeaderandFooter.css">
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/8569853d37.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="TopHeader">
@@ -18,12 +18,10 @@
                 <div class="Logo">
                     <a href="index.html"><img src="images/Logo.svg"></a>
                 </div>
-                <button id="Burger_Button">
-                    <span class="hamberger_img">　　</span>
-                    <span class="hamberger_img">　　</span>
-                    <span class="hamberger_img">　　</span>
-                </button>
                 <ul id="Nav-Item" class="hidden">
+                    <div class="Account_mb_btn">
+                        <button onclick="self.location.href='login.html'">登入/註冊</button>
+                    </div>
                     <li><a href="GoodsList.html">球 衣</a></li>
                     <li><a href="GoodsList.html">配 件</a></li>
                     <li><a href="GoodsList.html">鞋 類</a></li>
@@ -44,8 +42,16 @@
                         <span>註冊</span>
                     </a>
                 </div>
-                <a href="shopping cart.html" class="Shop_Icon"><img src="images/Icon/Icon_shoppingcart.png" alt="Shop_Icon"></a>
-                
+                <div class="Index_ShoppingCart">
+                    <a href="shopping cart.html" class="Shop_Icon">
+                        <img src="images/Icon/Icon_shoppingcart.png" alt="Shop_Icon">
+                    </a>
+                </div>
+                <button id="Burger_Button">
+                    <span class="hamberger_img">　　</span>
+                    <span class="hamberger_img">　　</span>
+                    <span class="hamberger_img">　　</span>
+                </button>
             </nav>       
         </section>
         <div class="TopHeader_Ad">

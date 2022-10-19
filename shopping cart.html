@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" type="images/png" href="images/simple_logo.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/HeaderandFooter.css">
     <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/8569853d37.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="TopHeader">
@@ -19,6 +19,9 @@
                     <a href="index.html"><img src="images/Logo.svg"></a>
                 </div>
                 <ul id="Nav-Item" class="hidden">
+                    <div class="Account_mb_btn">
+                        <button onclick="self.location.href='login.html'">登入/註冊</button>
+                    </div>
                     <li><a href="GoodsList.html">球 衣</a></li>
                     <li><a href="GoodsList.html">配 件</a></li>
                     <li><a href="GoodsList.html">鞋 類</a></li>
@@ -29,7 +32,11 @@
                 <!-- <div class="BackDrop"></div> -->
                 <div class="Search">
                     <input class="Search-Bar" type="Text" name="Search" id="Search" placeholder="搜尋">
-                    <button class="Search-Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="Search-Btn">
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </button>
                 </div>
                 <div class="Account">
                     <a href="login.html">
@@ -39,7 +46,11 @@
                         <span>註冊</span>
                     </a>
                 </div>
-                <a href="shopping cart.html" class="Shop_Icon"><img src="images/Icon/Icon_shoppingcart.png" alt="Shop_Icon"></a>
+                <div class="Index_ShoppingCart">
+                    <a href="shopping cart.html" class="Shop_Icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
                 <button id="Burger_Button">
                     <span class="hamberger_img">　　</span>
                     <span class="hamberger_img">　　</span>
@@ -52,7 +63,7 @@
             <span>下單後1~3個工作天出貨 | 7天鑑賞期無條件退貨</span>
         </div>
     </section>
-    <section class="Shopping_Cart" style="margin: 30px;max-width: 1500px;margin: auto;">
+    <section class="Shopping_Cart" style="">
         <h3 style="text-align: left;font-size: 36px;margin: 30px auto;">購物車</h3>
         <div class="Cart_Wrapper" style="display: flex;background-color: #797979;padding: 12px 0;color: white;">
             <div class="Cart_list" style="width: 40%;">產品</div>
