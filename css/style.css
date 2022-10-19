@@ -678,7 +678,6 @@ button,input{
 .Cart_Item{
     display: flex;
 }
-.Cart_Item 
 /* ------------------------ */
 @media screen and (max-width: 1200px){
     #Nav-Item{
