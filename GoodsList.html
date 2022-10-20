@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>NBA Star Store</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="icon" type="images/png" href="images/simple_logo.png">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="main.js"></script>
-        <script src="https://kit.fontawesome.com/8569853d37.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Star Store</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="icon" type="images/png" href="images/simple_logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/8569853d37.js" crossorigin="anonymous"></script>
+</head>
 <body>
     <section class="TopHeader">
         <section class="Navbar">
@@ -19,6 +19,9 @@
                     <a href="index.html"><img src="images/Logo.svg"></a>
                 </div>
                 <ul id="Nav-Item" class="hidden">
+                    <div class="Account_mb_btn">
+                        <button onclick="self.location.href='login.html'">登入/註冊</button>
+                    </div>
                     <li><a href="GoodsList.html">球 衣</a></li>
                     <li><a href="GoodsList.html">配 件</a></li>
                     <li><a href="GoodsList.html">鞋 類</a></li>
@@ -29,9 +32,7 @@
                 <!-- <div class="BackDrop"></div> -->
                 <div class="Search">
                     <input class="Search-Bar" type="Text" name="Search" id="Search" placeholder="搜尋">
-                    <button class="Search-Btn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    <button class="Search-Btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
                 <div class="Account">
                     <a href="login.html">

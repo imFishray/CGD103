@@ -673,12 +673,110 @@ button,input{
 .Shopping_Cart{
     margin: 30px auto;
     max-width: 1500px;
-    padding: 0 10%;
+}
+.Shopping_Cart .Cart_Title{
+    text-align: left;
+    font-size: 36px;
+    margin: 30px auto;
+}
+.Cart_Wrapper{
+    display: flex;
+    background-color: #797979;
+    padding: 12px 0;
+    color: white;
 }
 .Cart_Item{
     display: flex;
 }
-/* ------------------------ */
+.Cart_Item .Cart_Good{
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+}
+.Cart_Good img{
+    width: 120px;
+    height: 120px;
+    margin-right: 12px;
+}
+.Cart_Good .Cart_Good_Name{
+    line-height: 2rem;
+}
+.Cart_Good_Name h3{
+    font-size: 16px;
+    text-align: left;
+}
+.Cart_Good_Name div{
+    font-size: 14px;
+    text-align: left;
+}
+.Good_Option{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.Good_Option div{
+    width: 25%;
+}
+.Good_Option .Good_Number{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.Good_Number button{
+    width: 40px;
+    height:40px;
+    font-size: 30px;
+    border: none;
+    padding: 0;
+}
+.Good_Number button:nth-child(1){
+    background-color: #797979;
+}
+.Good_Number button:nth-child(3){
+    background-color: #2b00ff;
+}
+.Good_Number button span{
+    -webkit-text-stroke: 2px #ffffff;
+}
+.Delete_Good button{
+    border: none;
+    font-size: 18px;
+}
+.Price_Total{
+    max-width: 500px;
+    width: 50%;
+    float: right;
+    margin-bottom: 15px;
+}
+.Price_Total .Total_item{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4150D6;
+}
+.Leave_Btns button{
+    width: 45%;
+    padding: 12px 0;
+    font-weight: bold;
+}
+.Leave_Btns button:nth-child(1){
+    border: 1px solid #4150D6;
+    color: #4150D6;
+}
+.Leave_Btns button:nth-child(2){
+    background-color: #4150D6;
+    color: white;
+}
+.Command_Txt{
+    font-size: 12px;
+    margin-bottom: 15px;
+    clear: both;
+    text-align: center;
+}
+/* ----------平板-------------- */
 @media screen and (max-width: 1200px){
     #Nav-Item{
         position: fixed;
@@ -775,7 +873,7 @@ button,input{
     }
     /* -------------MainHeade------------ */
     .MainHeader_BG_ProjectBox .Headline{
-        font-size: 36px;
+        font-size: 28px;
     }
     .MainHeader_BG_ProjectBox .Button:hover a{
         color: #797979;
@@ -807,6 +905,9 @@ button,input{
         background-image: linear-gradient(360deg,rgba(63, 63, 63, 0.342),rgba(63, 63, 63, 0.342));
     }
     /* ------------人氣商品------------ */
+    .Gallery_title{
+        font-size: 28px;
+    }
     .ScrollBar_Wrap{
         overflow-x: scroll;
     }
@@ -823,21 +924,28 @@ button,input{
     .Large_Banner{
         text-align: center;
     }
+    .Large_Banner .Banner_List{
+        overflow: hidden;
+    }
     .Large_Banner h3{
         color: #000000;
         margin-bottom: 20px;
         font-weight: bolder;
     }
     .Large_Banner .HeaeLine{
-        font-size: 48px;
+        font-size: 28px;
     }
     .Large_Banner .Secondary{
-        font-size: 24px;
+        font-size: 16px;
         color: #797979;
         letter-spacing: 0;
     }
     .Large_Banner img{
-        width: 100%;
+        width: auto;
+        height: 300px;
+        object-fit: cover;
+        position: relative;
+        right: 150px;
     }
     /* ------------熱門球星區域------------ */
     .Card_Wrapper{
@@ -1000,5 +1108,89 @@ button,input{
     }
     .Login_Item{
         width: 100%;
+    }
+    /*------- 購物車區域---------- */
+    .Shopping_Cart{
+        padding: 0;
+    }
+    .Shopping_Cart .Cart_Title{
+        background-color: #393f48;
+        padding: 15px;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+    }
+    .Cart_Wrapper{
+        display: none;
+    }
+    .Cart_Item{
+        display: block;
+    }
+    .Cart_Item  .Cart_Good{
+        width: 100%;
+        padding: 5px;
+    }
+    .Cart_Item  .Cart_Good img{
+        width: 100px;
+        height: 100px;
+        margin: auto 10px;
+    }
+    .Cart_Item  .Cart_Good .Cart_Good_Name{
+        display: flex;
+        flex-direction: column;
+    }
+    .Cart_Good_Name h3{
+        font-size: 14px;
+    }
+    .Cart_Good_Name div{
+        font-size: 12px;
+    }
+    .Cart_Good_Name .Good_Option_mb .Good_Number{
+        display: flex;
+        gap: 10px;
+    }
+    .Cart_Good_Name .Good_Option_mb .Good_Number button{
+        width: 32px;
+        height: 32px;
+        font-size: 20px;
+    }
+    .Cart_Good_Name .Good_Option_mb .Good_Number .Good_Nb_Count{
+        display: inline-flex;
+        min-width: 32px;
+        max-height: 32px;
+        border: 2px solid rgb(121, 121, 121);
+        justify-content: center;
+    }
+    .Cart_Good_Name .Good_Option_mb .Delete_Good{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        margin: 10px auto;
+    }
+    .Cart_Good_Name .Good_Option_mb .Delete_Good span{
+        color: #4150D6;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .Good_Option_mb .Delete_Good button{
+        font-size: 16px;
+    }
+    .Cart_Item .Good_Option{
+        display: none;
+    }
+    .Price_Total{
+        width: 100%;
+        float: inherit;
+    }
+    .Leave_Btns{
+        padding: 10px;
+    }
+    .Leave_Btns button{
+        width: 100%;
+        margin: 5px auto;
+        border: none;
+    }
+    .Command_Txt{
+        padding: 10px;
     }
 }
