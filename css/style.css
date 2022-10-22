@@ -270,6 +270,9 @@ button,input{
 .Scroll_Gallery{
     width: 100%;
 }
+.ScrollBar_Wrap ul{
+    display: flex;
+}
 .ScrollBar_Wrap ul li{
     font-size: 18px;
     margin: 0 auto;
@@ -1192,5 +1195,59 @@ button,input{
     }
     .Command_Txt{
         padding: 10px;
+    }/* ------------商品內容頁面------------ */
+    .Goods_Input{
+        width: 100%;
+        display: block;
+        padding: 15px;
+    }
+    .Goods_Input .Goods_Left{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .Goods_Left .Goods_littlepic{
+        display: flex;
+        gap: 10px;
+    }
+    .Goods_Input .Goods_Right{
+        width: 100%;
+    }
+    .Goods_Input .Goods_Right .Pd_Title{
+    }
+    .Goods_Input .Goods_Right .Pd_Title .Title,.Pd_Price{
+    }
+    .Goods_Input .Goods_Right .Pd_Title .Word{
+    }
+    .Size{
+    }
+    .Size .size_txt{
+    }
+    .Size .size_txt a{
+    }
+    .Size .Size_Sec{
+    }
+    .Size .Size_Sec div button{
+    }
+    .Size .Size_Sec button:focus{
+    }
+    .Size .Size_Sec button:hover{
+    }
+    .Goods_Right .Button{
+    }
+    .Goods_Right .Button:hover a{
+    }
+    .Goods_Input .Button a{
+    }
+    .Pd_Description{
+    }
+    .Pd_Description .Pd_Ttxt P{
+    }
+    .Pd_Description .SizeModel{
+    }
+    .Pd_Description label{
+    }
+    .Pd_Description label span{
+    }
+    .Pd_Description label>p{
     }
 }
