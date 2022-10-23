@@ -14,9 +14,33 @@
     text-align: center;
     line-height: 40px;
 }
-.TopHeader_Ad span{
-    width: 100%;
+.marquee {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+}
+
+.marquee div {
     font-size: 14px;
+    font-weight: bold;  
+    padding-left: 100%;
+    display: inline-block;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+      transform: translate(-100%, 0);
+    }
+    0%{
+      animation-delay: 8s;
+    }
+}
+@keyframes marquee{
+    100%{
+        transform: translate(-100%,0);
+    }
 }
 .Navbar{
     background-color: rgb(10, 54, 101);
@@ -104,6 +128,10 @@
 }
 #Burger_Button{
     display: none;
+}
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
 }
 /* ------------Footer---------------- */
 .Footer{
