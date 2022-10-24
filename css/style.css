@@ -661,20 +661,21 @@ button,input{
 .Size .Size_Sec button:hover{
     border:2px solid #797979;
 }
-.Goods_Right .Button{
-    padding: 0 20px;
+.Goods_Right .Button:hover button{
+    background-color: rgba(0, 0, 0, 0.644);
 }
-.Goods_Right .Button:hover a{
-    background-color: rgba(109, 108, 108, 0.644);
-}
-.Goods_Input .Button a{
+.Goods_Input .Button button{
     background-color: #000000cb;
+    width: 100%;
     display: flex;
-    margin: 20px auto;
+    margin: 10px auto;
     justify-content: center;
-    border-radius: 40px;
-    padding: 20px 0;
+    border-radius: 20px;
+    padding: 20px;
     color: #ffffff;
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;
 }
 .Pd_Description{
     border: 2px solid #797979;
@@ -980,7 +981,7 @@ button,input{
     }
     /* ------------熱門球星區域------------ */
     .Card_Wrapper{
-        padding: 0 50px;
+        padding: 0 10px;
     }
     .Player_Card{
         width: 100%;
@@ -1000,13 +1001,10 @@ button,input{
         object-position: top;
     }
     .Hot_Player ul{
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        overflow: scroll;
+        display: grid;
     }
     .Hot_Player ul li{
-        margin: 10px;
+        margin: auto;
         text-align: center;
         line-height: 1.5;
     }
